@@ -3,7 +3,7 @@
   "description": "Tiny Encryption Algorithm in N-API",
   "version": "0.0.1",
   "main": "src/index.js",
-  "private": true,
+  "author": "yanlong.wang@naiver.org",
   "dependencies": {
     "bindings": "*",
     "cmake-js": "^6.1.0",
