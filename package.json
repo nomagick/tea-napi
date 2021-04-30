@@ -1,0 +1,19 @@
+{
+  "name": "tea-napi",
+  "description": "Tiny Encryption Algorithm in N-API",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "private": true,
+  "dependencies": {
+    "bindings": "*",
+    "cmake-js": "^6.1.0",
+    "node-addon-api": "*"
+  },
+  "scripts": {
+    "install": "cmake-js compile"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.1"
+  },
+  "types": "src/index.d.ts"
+}
