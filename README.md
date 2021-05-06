@@ -31,15 +31,15 @@ const key = Buffer.alloc(TEA_KEY_LEN);
 
 const encrypted = teaEncrypt(data, key, ITER);
 
-// Same reference, data changed.
+// Same reference, but actually bytes changed.
 assert(encrypted === data);
 
-// The last byte, which is not aligned, is left untouched
+// The last byte, which is not aligned, was left untouched
 assert(encrypted[TEA_BLOCK_LEN + 1] === 0);
 
 const decrypted = teaDecrypt(encrypted, key, ITER);
 
-assert(Buffer.compare(decrypted, Buffer.alloc(TEA_BLOCK_LEN)) === 0);
+assert(Buffer.compare(decrypted, Buffer.alloc(TEA_BLOCK_LEN + 1)) === 0);
 
 ```
 

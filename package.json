@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "main": "src/index.js",
   "author": "yanlong.wang@naiver.org",
+  "homepage": "https://github.com/nomagick/tea-napi",
   "dependencies": {
     "bindings": "*",
     "cmake-js": "^6.1.0",
