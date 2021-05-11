@@ -1,7 +1,7 @@
 {
   "name": "tea-napi",
   "description": "Tiny Encryption Algorithm in N-API",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "src/index.js",
   "author": "yanlong.wang@naiver.org",
   "homepage": "https://github.com/nomagick/tea-napi",
@@ -16,12 +16,10 @@
   ],
   "dependencies": {
     "bindings": "*",
-    "cmake-js": "^6.1.0",
     "node-addon-api": "*"
   },
-  "scripts": {
-    "install": "cmake-js compile"
-  },
+  "gypfile": true,
+  "scripts": {},
   "devDependencies": {
     "@types/node": "^15.0.1"
   },
